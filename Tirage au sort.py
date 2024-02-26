@@ -6,28 +6,21 @@ for x in range(0,nb):
     print("Personne",x+1,":")
     nom=str(input("Nom de la personnes : "))
     Noms.append(nom)
-print(Noms)
+print("La liste des noms est :",Noms)
 
-
-
-random.shuffle(Noms)                #La fonction random.shuffle(x) permet de mélanger de manière aléatoire une liste
-print(Noms)
-
-
-
-"""
 #Deuxième partie du programme, classement aléatoire des noms
 index=[]
 ordrefin=[]
 for i in range(1,nb+1):
     print(i,"vérif 1")
     sel=random.randint(1,nb)
-    if sel in index:
-        sel=random.randint
+    while sel in index:
+        sel=random.randint(1,nb)
     index.append(sel)
     print(sel,"vérif 2")
-    nb=nb-1
-"""
+    ordrefin.append(Noms[sel-1])
+print("Le nouvel ordre des noms est :",ordrefin)
+
 
 
 """
