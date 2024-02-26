@@ -13,9 +13,9 @@ print("La liste des noms est :",Noms)
 index=[]
 ordrefin=[]
 for i in range(1,nb+1):
-    sel=random.randint(1,nb)
+    sel=random.randint(1,nb)                            #séléction d'un index aléatoire
     while sel in index:
-        sel=random.randint(1,nb)
+        sel=random.randint(1,nb)                        #permet d'éviter de choisir plusieur fois le même index
     index.append(sel)
-    ordrefin.append(Noms[sel-1])
+    ordrefin.append(Noms[sel-1])                        #ajoute à la liste ordrefin l'élément de la liste Noms correspondant à l'index choisi
 print("Le nouvel ordre des noms est :",ordrefin)
