@@ -1,6 +1,6 @@
 import random
 
-#Première partie du programme, l'entré des noms
+#Première partie du programme, l'entré des noms un par un
 Noms=[]
 nb=int(input("Nombres de personnes : "))
 for x in range(0,nb):
