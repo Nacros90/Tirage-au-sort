@@ -12,13 +12,14 @@ print("La liste des noms est :",Noms)
 index=[]
 ordrefin=[]
 for i in range(1,nb+1):
-    print(i,"vérif 1")
+    print(i)
     sel=random.randint(1,nb)
     while sel in index:
         sel=random.randint(1,nb)
     index.append(sel)
-    print(sel,"vérif 2")
+    print(sel)
     ordrefin.append(Noms[sel-1])
+    print(ordrefin)
 print("Le nouvel ordre des noms est :",ordrefin)
 
 
